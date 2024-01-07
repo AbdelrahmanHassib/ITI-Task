@@ -2,8 +2,8 @@ var express = require('express')
 var socket = require('socket.io')
 
 var application = express()
-
-var server = application.listen(7000, function () {
+var port = process.env.PORT || 7000
+var server = application.listen(port, function () {
   console.log('Your server is running at  http:/localhost:7000')
 })
 
