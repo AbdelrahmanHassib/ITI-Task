@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:7000')
+var socket = io.connect('https://chat-app-0z0c.onrender.com/')
 
 var usrname = document.getElementById('usrname')
 var message = document.getElementById('message')
