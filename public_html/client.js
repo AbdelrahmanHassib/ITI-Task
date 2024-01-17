@@ -10,6 +10,7 @@ send.addEventListener('click', function () {
     usrname: usrname.value,
     message: message.value,
   })
+  message.value = ''
 })
 
 socket.on('new_msg', function (data) {
